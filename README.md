@@ -32,7 +32,6 @@ src/
 ├── app.module.ts
 └── main.ts
 
-Text
 
 ## Getting Started
 
