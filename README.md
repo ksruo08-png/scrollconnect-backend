@@ -6,6 +6,7 @@ This project implements a basic Students resource with full CRUD operations usin
 
 ## Features
 
+- ✅ Get all students (`GET /students`)
 - ✅ Get a single student by ID (`GET /students/:id`)
 - ✅ Create a student (`POST /students`)
 - ✅ Update a student (`PUT /students/:id`)
@@ -56,37 +57,26 @@ npm run start:dev
 The server will start at:
 [localhost](http://localhost:3000/)
 
-API Endpoints
+API Endpoints:
+
 Method	Endpoint	Description	Status
+GET	/students	Get all students	200
 GET	/students/:id	Get a student by ID	200
 POST	/students	Create a new student	201
 PUT	/students/:id	Update an existing student	200
 DELETE	/students/:id	Delete a student	200
-Example Requests
+
+
+Example Requests:
+
 1. Get Student by ID
 GET http://localhost:3000/students/1
 
-Response (200 OK):
-
-JSON
-{
-  "id": 1,
-  "name": "Srushti",
-  "email": "srushti@example.com"
-}
 2. Create a Student
 POST http://localhost:3000/students
 
 JSON
 {
-  "name": "Srushti",
-  "email": "srushti@example.com"
-}
-Response (201 Created):
-
-JSON
-{
-  "id": 1,
   "name": "Srushti",
   "email": "srushti@example.com"
 }
@@ -98,31 +88,22 @@ JSON
   "name": "Srushti Kadam",
   "email": "srushti.kadam@example.com"
 }
-Response (200 OK):
-
-JSON
-{
-  "id": 1,
-  "name": "Srushti Kadam",
-  "email": "srushti.kadam@example.com"
-}
 4. Delete a Student
 DELETE http://localhost:3000/students/1
 
-Response (200 OK):
+Testing Evidence (Screenshots)
+All endpoints were successfully tested using Thunder Client.
 
-JSON
-{
-  "message": "Student with id 1 deleted"
-}
-Testing Evidence
-All endpoints were successfully tested using Thunder Client:
+Method	Endpoint	      Status	      
 
-✅ GET → 200 OK
-✅ POST → 201 Created
-✅ PUT → 200 OK
-✅ DELETE → 200 OK
-Learning Objectives Covered
+GET	    /students/:id	  200 OK	
+POST	  /students	      201 Created	
+PUT	    /students/:id	  200 OK	
+DELETE	/students/:id	  200 OK	
+Note: Make sure your screenshot file names match the names used above (get-all.png, create-student.png, etc.). If your file names are different, just update the names in the README.
+
+Learning Objectives Covered:
+
 NestJS project initialization
 Understanding Modules, Controllers & Services
 Creating a resource module (Students)
@@ -131,7 +112,10 @@ Moving business logic into a Service
 Connecting Service with Controller
 Testing APIs with Thunder Client
 Exploring PUT and DELETE endpoints
-Documentation
+
+
+Documentation:
+
 Official NestJS Docs: [docs.nestjs.com](https://docs.nestjs.com/)
 Backend Team Task – NestJS Controllers, Services & CRUD Basics
 Made with ❤️ using NestJS
