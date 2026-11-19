@@ -2,9 +2,8 @@ NestJS Students CRUD API
 
 A simple NestJS backend project demonstrating basic CRUD operations using Controllers, Services, and Modules.
 
-Features
+Features:
 
-- Get all students
 - Get a student by ID
 - Create a student
 - Update a student
@@ -12,26 +11,26 @@ Features
 - In-memory data storage
 - Proper HTTP status codes
 
-Tech Stack
+Tech Stack:
 
 - NestJS
 - Node.js
 - TypeScript
 - Thunder Client
 
-Installation
+Installation:
 
 git clone https://github.com/ksruo08-png/scrollconnect-backend.git
 cd scrollconnect-backend
 npm install
 
-Run the Project
+Run the Project:
 
 npm run start:dev
 
 Server runs at: "http://localhost:3000"
 
-API Endpoints
+API Endpoints:
 
 Method| Endpoint| Description
 GET| /students| Get all students
@@ -40,11 +39,11 @@ POST| /students| Create student
 PUT| /students/:id| Update student
 DELETE| /students/:id| Delete student
 
-Testing
+Testing:
 
 All endpoints were tested using Thunder Client.
 
-Learning Objectives
+Learning Objectives:
 
 - Understanding NestJS architecture
 - Working with Controllers, Services and Modules
