@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, ParseIntPipe, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Put } from '@nestjs/common';
 import { StudentsService } from './students.service';
 
 @Controller('students')
@@ -16,7 +16,19 @@ export class StudentsController {
   }
 
   @Post()
-  create(@Body() body: { name: string; branch: string }) {
-    return this.studentsService.create(body);
+  create(@Body() body: { name: string; email: string }) {
+    return this.studentsService.create(body.name, body.email);
+  }
+  @Put(':id')
+  update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() body: { name: string; email: string },
+  ) {
+    return this.studentsService.update(id, body.name, body.email);
+  }
+
+  @Delete(':id')
+  remove(@Param('id', ParseIntPipe) id: number) {
+    return this.studentsService.remove(id);
   }
 }
