@@ -30,14 +30,15 @@ npm run start:dev
 
 Server runs at: "http://localhost:3000"
 
+
 API Endpoints:
 
-Method| Endpoint     | Description
-GET   | /students    | Get all students
-GET   | /students/:id| Get student by ID
-POST  | /students    | Create student
-PUT   | /students/:id| Update student
-DELETE| /students/:id| Delete student
+| Method | Endpoint         | Description                 |
+| ------ | ---------------- | --------------------------- |        |
+| GET    | `/students/:id`  | Get a student by id         |
+| POST   | `/students`      | Create a student            |
+| PUT    | `/students/:id`  | Update a student            |
+| DELETE | `/students/:id`  | Delete a student            |
 
 Testing:
 
