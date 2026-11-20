@@ -32,11 +32,11 @@ Server runs at: "http://localhost:3000"
 
 API Endpoints:
 
-Method| Endpoint| Description
-GET| /students| Get all students
-GET| /students/:id| Get student by ID
-POST| /students| Create student
-PUT| /students/:id| Update student
+Method| Endpoint     | Description
+GET   | /students    | Get all students
+GET   | /students/:id| Get student by ID
+POST  | /students    | Create student
+PUT   | /students/:id| Update student
 DELETE| /students/:id| Delete student
 
 Testing:
